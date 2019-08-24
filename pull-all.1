@@ -1,0 +1,60 @@
+.\" Man page for pull-all
+.TH PULL-ALL "1" "August 2019" "VER 1.0.0" "General Commands Manual"
+.SH NAME
+pull-all \- runs 'git pull' in all directories in your current working directory
+
+.SH SYNOPSIS
+This program does not take any command line args
+
+.SH DESCRIPTION
+.PP
+This program 'cd's into every dir in your current directory, then runs 'git pull && cd ..'
+
+.SH DEPENDENCIES
+git(1)
+
+git-pull(1)
+
+A system shell that can change directories by the command 'cd'
+
+A somewhat POSIX complaint system with a Unix-like kernel so the program can get the directories via dirent.h
+and get the current working directory via unistd.h
+
+.SH AUTHOR
+Written by Adam McKenney and others from across the globe
+
+.SH "REPORTING BUGS"
+Reports go to the main project page: 
+
+<https://github.com/mckenney5/pull-all>
+
+.SH COPYRIGHT
+This is free and unencumbered software released into the public domain.
+
+Anyone is free to copy, modify, publish, use, compile, sell, or
+distribute this software, either in source code form or as a compiled
+binary, for any purpose, commercial or non-commercial, and by any
+means.
+
+In jurisdictions that recognize copyright laws, the author or authors
+of this software dedicate any and all copyright interest in the
+software to the public domain. We make this dedication for the benefit
+of the public at large and to the detriment of our heirs and
+successors. We intend this dedication to be an overt act of
+relinquishment in perpetuity of all present and future rights to this
+software under copyright law.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
+
+For more information, please refer to <http://unlicense.org/>
+
+.SH "SEE ALSO"
+.BR git-pull
+(1)
+
